@@ -1,4 +1,4 @@
-package aula1;
+package aula2;
 
 public class Funcionario {
 

@@ -1,4 +1,4 @@
-package aula2;
+package aula4;
 
 import java.util.Scanner;
 
@@ -15,8 +15,11 @@ public class TestaAluno {
         System.out.println("Digite a idade do aluno: ");
         int  idadeDoAluno = inputDoTeclado.nextInt();
 
-        Aluno aluno = new Aluno(nomeDoAluno, racaDoAluno, idadeDoAluno);
-        aluno.imprimirDadosAlunos();
+        System.out.println("Digite a media do aluno: ");
+        float  mediaDoAluno = inputDoTeclado.nextFloat();
 
+        Aluno aluno = new Aluno(nomeDoAluno, racaDoAluno, idadeDoAluno, mediaDoAluno);
+        System.out.println("Situação do Aluno");
+        aluno.alunoAprovado(mediaDoAluno);
     }
 }
